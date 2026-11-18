@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "unstuck",
+  "version": "1.0.0",
+  "description": "Finish stalled engineering work. Reuse progress and act on what is left. 闭嘴，接着干活。",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Unstuck",
+        "shortDescription": "Stop spinning and finish the deliverable",
+        "category": "Productivity"
+      }
+    }
+  }
+}
