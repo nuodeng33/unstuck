@@ -4,9 +4,11 @@
 
 已经定位了就修，别人改完了就接手，验证过了就往下做。把用户要的东西交出来。
 
+同一个 Skill，可用于 Codex、Claude Code 和 Google Antigravity。
+
 [English](README.md) · [下载 Skill](https://github.com/nuodeng33/unstuck/releases/latest)
 
-> `$unstuck 补丁已在当前工作区，回归测试也过了。把发布包做出来。`
+> 用 Unstuck 接着做。补丁已在当前工作区，回归测试也过了，把发布包做出来。
 
 已有测试结果还适用于当前版本，就接着打包、检查产物并交付。同样的重试或复核给不出新信息，就换办法，或者先把能推进的部分做完。
 
@@ -18,11 +20,21 @@
 
 ## 安装
 
+把 [Skill ZIP](https://github.com/nuodeng33/unstuck/releases/latest) 里的 `unstuck` 目录解压到对应客户端的技能目录。
+
+| 客户端 | 用户技能目录 | 调用 |
+| --- | --- | --- |
+| Codex | `~/.agents/skills/` | `$unstuck` |
+| Claude Code | `~/.claude/skills/` | `/unstuck` |
+| Google Antigravity（反重力） | `~/.gemini/config/skills/` | `/unstuck` |
+
+Codex 也支持通过插件市场安装。
+
 ```sh
 codex plugin marketplace add nuodeng33/unstuck
 codex plugin add unstuck@unstuck-skills
 ```
 
-新开 Codex 对话，选择 **Unstuck** 技能并说清要交付什么。也可以把 Skill ZIP 里的 `unstuck` 目录解压到 `~/.agents/skills/`，直接用 `$unstuck` 调用。向量检索和多智能体协作使用你已配置的工具。
+新开对话，调用 Unstuck 并说清要交付什么。向量检索和多智能体协作使用你已配置的工具。
 
 [MIT 许可证](LICENSE)
